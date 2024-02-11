@@ -8,7 +8,25 @@
     <meta name="description" content="An app, that renders a list of todays birthdays in history">
     <meta name="keywords" content="HTML, CSS, JavaScript, React, Redux">
     <meta name="author" content="Martins Musa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+      scrollbar-gutter: stable;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #root {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

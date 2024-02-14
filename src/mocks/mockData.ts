@@ -96,7 +96,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "2000"
+            "year": 2000
         },
         {
             "text": "Trent Frederic, American ice hockey player",
@@ -192,7 +192,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1998"
+            "year": 1998
         },
         {
             "text": "Josh Jacobs, American football player",
@@ -288,7 +288,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1998"
+            "year": 1998
         },
         {
             "text": "Khalid, American singer and songwriter",
@@ -384,7 +384,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1998"
+            "year": 1998
         },
         {
             "text": "Damien Harris, American football player",
@@ -480,7 +480,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1997"
+            "year": 1997
         },
         {
             "text": "Mike Hughes, American football player",
@@ -576,7 +576,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1997"
+            "year": 1997
         },
         {
             "text": "Hubert Hurkacz, Polish tennis player",
@@ -672,7 +672,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1997"
+            "year": 1997
         },
         {
             "text": "Rosé, New Zealand-South Korean singer and dancer",
@@ -768,7 +768,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1997"
+            "year": 1997
         },
         {
             "text": "Daniil Medvedev, Russian tennis player",
@@ -864,7 +864,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1996"
+            "year": 1996
         },
         {
             "text": "Jonathan Tah, German footballer",
@@ -960,7 +960,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1996"
+            "year": 1996
         },
         {
             "text": "Milan Škriniar, Slovak footballer",
@@ -1056,7 +1056,7 @@ export const birthsOnly: OnThisDayRes = {
                     "normalizedtitle": "February 11"
                 }
             ],
-            "year": "1995"
+            "year": 1995
         },
     ]
 }

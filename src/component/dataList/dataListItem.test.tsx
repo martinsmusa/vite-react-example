@@ -3,8 +3,8 @@ import DataListItem from './dataListItem.tsx';
 
 describe('List item component', () => {
     it('renders the component if props are provided', () => {
-        const year = '1990';
-        const text = 'My birthday';
+        const year = 1990;
+        const text = 'Some event';
 
         const { queryByText } = render(<DataListItem year={ year } text={ text }/>);
         const renderedYear = queryByText(`Year: ${ year }`);
@@ -15,7 +15,7 @@ describe('List item component', () => {
     });
 
     it('does not render if year is not provided', () => {
-        const text = 'My birthday';
+        const text = 'Some event';
 
         const { queryByText } = render(<DataListItem text={ text }/>);
         const renderedText = queryByText(text);
@@ -24,7 +24,7 @@ describe('List item component', () => {
     });
 
     it('does not render if text is not provided', () => {
-        const year = '1990';
+        const year = 1990;
         const { queryByText } = render(<DataListItem year={ year }/>);
         const renderedText = queryByText(year);
 

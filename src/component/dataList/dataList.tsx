@@ -12,7 +12,7 @@ const DataList: FC = () => {
             data: (response.data?.births || []).map(({ text, year }) => ({
                 text,
                 year
-            })).sort((a, b) => parseInt(a.year || '') - parseInt(b.year || ''))
+            })).sort((a, b) => (a.year || -Infinity) - (b.year || -Infinity))
         })
     });
 

@@ -33,7 +33,7 @@ export interface OnThisDay {
     /** @description Short description of the event */
     text?: string;
     /** @description Short description of the event */
-    year?: string;
+    year?: number;
     /** @description List of pages related to the event, not used at the moment */
     pages?: unknown[];
 }

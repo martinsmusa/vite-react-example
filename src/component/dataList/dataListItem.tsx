@@ -4,7 +4,7 @@ import { OnThisDayListItem } from './style.ts';
 
 interface IListItemProps {
     text?: string,
-    year?: string
+    year?: number
 }
 
 const DataListItem: FC<IListItemProps> = memo(({ text, year }) => {
@@ -21,7 +21,7 @@ const DataListItem: FC<IListItemProps> = memo(({ text, year }) => {
 });
 
 DataListItem.propTypes = {
-    year: PropTypes.string,
+    year: PropTypes.number,
     text: PropTypes.string
 }
 

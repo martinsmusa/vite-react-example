@@ -1,16 +1,16 @@
-import OnThisDay from "./feature/onThisDay/onThisDay.tsx";
-import {AlertNotification} from "./component";
-import {Layout} from "./style/global.ts";
+import { BirthdayList } from './feature';
+import { AlertNotification } from './component';
+import { Layout } from './style/global.ts';
 
 const App = () => {
     return (
         <>
-            <AlertNotification />
+            <AlertNotification/>
             <Layout>
-                <OnThisDay />
+                <BirthdayList/>
             </Layout>
         </>
-    )
-}
+    );
+};
 
-export default App
+export default App;

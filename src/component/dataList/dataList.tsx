@@ -1,7 +1,7 @@
 import { FC, useMemo } from 'react';
 import { useOnThisDayMutation } from '../../store/api/api.ts';
 import { ON_THIS_DAY_CACHE_KEY } from '../../feature/onThisDay/cosntant.ts';
-import { DataListItem } from './dataListItem.tsx';
+import DataListItem from './dataListItem.tsx';
 import { OnThisDayList } from './style.ts';
 
 const DataList: FC = () => {
@@ -17,11 +17,11 @@ const DataList: FC = () => {
     });
 
     const renderList = useMemo(() => {
-        return data.map(({year, text}) => <DataListItem text={text} year={year} />);
+        return data.map(({ year, text }) => <DataListItem key={ text } text={ text } year={ year }/>);
     }, [data]);
 
     if (isSuccess && !renderList.length) {
-        return <div>No data found</div>
+        return <div>No data found</div>;
     }
 
     if (isLoading || isError) {
@@ -29,7 +29,7 @@ const DataList: FC = () => {
     }
 
     return (
-        <OnThisDayList>
+        <OnThisDayList data-testid="data-list">
             { renderList }
         </OnThisDayList>
     );

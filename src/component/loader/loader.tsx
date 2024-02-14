@@ -12,7 +12,7 @@ const Loader: FC = () => {
     }
 
     return (
-        <OverlayBg>
+        <OverlayBg data-testid="loader">
             <LoaderSpinner />
         </OverlayBg>
     )

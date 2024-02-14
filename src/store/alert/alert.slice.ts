@@ -1,8 +1,8 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import {IAlertItem} from "./alert.type.ts";
+import { IAlertItem } from './alert.type.ts';
 
-const initialState: IAlertItem = {
+export const initialState: IAlertItem = {
     id: '',
     title: '',
     message: ''

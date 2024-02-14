@@ -7,10 +7,12 @@ import { ON_THIS_DAY_CACHE_KEY } from '../../feature/onThisDay/cosntant.ts';
 import { CtaButton } from './style.ts';
 
 const DataFetchButton: FC = () => {
-    const { dd, mm } = useMemo((): OnThisDayArg => {
+    const parameters = useMemo((): OnThisDayArg => {
         const today = new Date();
 
         return {
+            type: 'births',
+            language: 'en',
             dd: today.getDate().toString(),
             mm: (today.getMonth() + 1).toString()
         };
@@ -19,7 +21,7 @@ const DataFetchButton: FC = () => {
     const { setAlert } = useActions();
 
     const requestClickHandler: MouseEventHandler<HTMLButtonElement> = useCallback(async () => {
-        const res = await fetchOnThisDay({ mm, dd });
+        const res = await fetchOnThisDay(parameters);
 
         if ('error' in res) {
             /**
@@ -41,7 +43,7 @@ const DataFetchButton: FC = () => {
                 message: detail || 'Something went wrong'
             });
         }
-    }, [dd, fetchOnThisDay, mm, setAlert]);
+    }, [fetchOnThisDay, parameters, setAlert]);
 
     return (
         <CtaButton onClick={ requestClickHandler }>

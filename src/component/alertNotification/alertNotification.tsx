@@ -18,7 +18,7 @@ const AlertNotification: FC = () => {
     }
 
     return (
-        <OverlayBg>
+        <OverlayBg data-testid="alert-notification">
             <ModalContainer>
                 <ModalHeader>
                     <h3>

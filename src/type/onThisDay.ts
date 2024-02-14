@@ -12,7 +12,7 @@ export type OnThisDayArg = {
      * - For example: ar (Arabic), en (English), es (Spanish)
      * - List supported languages: https://api.wikimedia.org/wiki/Feed_API/Language_support#On_this_day_in_history
      */
-    language?: string
+    language: string
     /**
      * @description Type of event:
      * - all: Returns all types
@@ -22,7 +22,7 @@ export type OnThisDayArg = {
      * - holidays: Fixed holidays celebrated on the given date
      * - events: Events that occurred on the given date that are not included in another type
      */
-    type?: 'all' | 'selected' | 'births' | 'deaths' | 'events' | 'holidays';
+    type: 'all' | 'selected' | 'births' | 'deaths' | 'events' | 'holidays';
     /** @description Month events are requested for, 0-padded */
     mm: string
     /** @description Day of the month events are requested for, 0-padded */
@@ -36,12 +36,4 @@ export interface OnThisDay {
     year?: string;
     /** @description List of pages related to the event, not used at the moment */
     pages?: unknown[];
-}
-
-export interface WikiError {
-    type: string;
-    title: string;
-    method: string;
-    detail?: string;
-    uri?: string;
 }

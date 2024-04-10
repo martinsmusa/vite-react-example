@@ -1,9 +1,10 @@
 import { FC, MouseEventHandler, useCallback, useMemo } from 'react';
-import { OnThisDayArg } from '../../type/onThisDay.ts';
-import { useOnThisDayMutation } from '../../store/api/api.ts';
-import { useActions } from '../../hooks/useActions.ts';
-import { WikiResponseError } from '../../type/api.ts';
+
 import { ON_THIS_DAY_CACHE_KEY } from '../../feature/onThisDay/cosntant.ts';
+import { useActions } from '../../hooks/useActions.ts';
+import { useOnThisDayMutation } from '../../store/api/api.ts';
+import { WikiResponseError } from '../../type/api.ts';
+import { OnThisDayArg } from '../../type/onThisDay.ts';
 import { CtaButton } from './style.ts';
 
 const DataFetchButton: FC = () => {
@@ -14,7 +15,7 @@ const DataFetchButton: FC = () => {
             type: 'births',
             language: 'en',
             dd: today.getDate().toString(),
-            mm: (today.getMonth() + 1).toString()
+            mm: (today.getMonth() + 1).toString() 
         };
     }, []);
     const [fetchOnThisDay] = useOnThisDayMutation({ fixedCacheKey: ON_THIS_DAY_CACHE_KEY });

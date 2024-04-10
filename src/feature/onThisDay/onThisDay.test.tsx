@@ -1,9 +1,10 @@
+import { screen, waitFor } from '@testing-library/react';
 import { act } from '@testing-library/react-hooks';
+
 import App from '../../app.tsx';
 import { birthsOnly } from '../../mocks/mockData.ts';
 import AlertSlice from '../../store/alert/alert.slice.ts';
 import { renderWithProviders, userEvent } from '../../test-utils.tsx';
-import { screen, waitFor } from '@testing-library/react';
 import OnThisDay from './onThisDay.tsx';
 
 const setup = () => {

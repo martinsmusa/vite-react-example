@@ -1,4 +1,5 @@
 import { describe } from 'vitest';
+
 import AlertSlice, { initialState } from './alert.slice.ts';
 import { IAlertItem } from './alert.type.ts';
 

@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+
 import { OnThisDayArg, OnThisDayRes } from '../../type/onThisDay.ts';
 
 export const SHORT_CACHE_TTL = 10;

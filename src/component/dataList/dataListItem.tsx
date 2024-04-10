@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { FC, memo } from 'react';
+
 import { OnThisDayListItem } from './style.ts';
 
 interface IListItemProps {
@@ -23,6 +24,6 @@ const DataListItem: FC<IListItemProps> = memo(({ text, year }) => {
 DataListItem.propTypes = {
     year: PropTypes.number,
     text: PropTypes.string
-}
+};
 
 export default DataListItem;

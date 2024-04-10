@@ -1,12 +1,14 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
-import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import {defineConfig} from 'vite'
+// @ts-expect-error: type exports may need to be updated in the library package.json
+import eslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [react()],
+    plugins: [react(), eslint()],
     server: {
         cors: false
     },
@@ -15,6 +17,6 @@ export default defineConfig({
         css: true,
         environment: 'jsdom',
         setupFiles: ['./src/setup.ts'],
-        pool: 'forks',
-    },
+        pool: 'forks'
+    }
 })

@@ -1,4 +1,5 @@
 import { http, HttpResponse } from 'msw';
+
 import { OnThisDayArg } from '../type/onThisDay.ts';
 import { birthsOnly } from './mockData.ts';
 

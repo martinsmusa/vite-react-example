@@ -1,4 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
+
 import { RootState } from '../reducers.ts';
 
 export const alertSelector = createSelector(

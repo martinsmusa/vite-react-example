@@ -1057,6 +1057,6 @@ export const birthsOnly: OnThisDayRes = {
                 }
             ],
             "year": 1995
-        },
+        }
     ]
 }

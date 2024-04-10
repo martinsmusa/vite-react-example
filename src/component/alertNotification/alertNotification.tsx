@@ -1,6 +1,7 @@
 import { FC, useCallback } from 'react';
-import { useAppSelector } from '../../hooks/useAppSelector.ts';
+
 import { useActions } from '../../hooks/useActions.ts';
+import { useAppSelector } from '../../hooks/useAppSelector.ts';
 import { alertSelector } from '../../store/alert/alert.selector.ts';
 import { OverlayBg } from '../../style/global.ts';
 import { ModalContainer,  ModalHeader } from './style.ts';

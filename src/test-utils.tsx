@@ -1,7 +1,8 @@
-import React, { PropsWithChildren, ReactNode } from 'react';
-import { render } from '@testing-library/react';
 import type { RenderOptions } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import React, { PropsWithChildren, ReactNode } from 'react';
 import { Provider } from 'react-redux';
+
 import { setupStore } from './store';
 import { AppStore, RootState } from './store/reducers.ts';
 
@@ -20,6 +21,7 @@ export const Wrapper = ({ children }: PropsWithChildren): ReactNode => {
  * @param store
  * @param renderOptions
  */
+// eslint-disable-next-line react-refresh/only-export-components
 export const renderWithProviders = (
     ui: React.ReactElement,
     {
@@ -33,4 +35,5 @@ export const renderWithProviders = (
     return { store, ...render(ui, { wrapper: Wrapper }) };
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export { default as userEvent } from '@testing-library/user-event';

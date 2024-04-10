@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react';
+
 import DataListItem from './dataListItem.tsx';
 
 describe('List item component', () => {

@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
-import {api} from "./api/api.ts";
+
 import {AlertSlice} from "./alert";
+import {api} from "./api/api.ts";
 import { setupStore } from './index.ts';
 
 export const reducer = combineReducers({

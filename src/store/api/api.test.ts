@@ -1,4 +1,5 @@
-import { renderHook, act } from '@testing-library/react-hooks';
+import { act,renderHook } from '@testing-library/react-hooks';
+
 import { birthsOnly } from '../../mocks/mockData.ts';
 import { Wrapper } from '../../test-utils.tsx';
 import { useOnThisDayMutation } from './api.ts';
